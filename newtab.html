@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Tab</title>
+    <link rel="stylesheet" href="newtab.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <div class="eyebrow">New Tab</div>
+        <h1>Quick Search</h1>
+        <form class="search" action="https://www.google.com/search" method="get">
+          <input
+            class="search-input"
+            type="text"
+            name="q"
+            autocomplete="off"
+            autocapitalize="off"
+            spellcheck="false"
+            placeholder="Search the web"
+          />
+          <button class="search-button" type="submit">Search</button>
+        </form>
+        <p class="hint">
+          Gestures: right-click, drag down-right to close and focus the right tab. Drag down-left to close and focus
+          the left tab.
+        </p>
+      </section>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="rightClickGestures.js"></script>
+    <script src="newtab.js"></script>
+  </body>
+</html>
