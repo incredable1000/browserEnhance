@@ -1,3 +1,5 @@
+importScripts("sessionIsolation.js");
+
 function openLinkNextToCurrent(url, senderTab) {
   const index = senderTab && typeof senderTab.index === "number" ? senderTab.index + 1 : undefined;
   const openerTabId = senderTab && typeof senderTab.id === "number" ? senderTab.id : undefined;

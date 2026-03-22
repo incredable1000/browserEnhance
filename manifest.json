@@ -4,10 +4,17 @@
   "version": "1.0.0",
   "description": "Click and hold a link, then move right to open it in a new tab next to the current tab.",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage",
+    "debugger",
+    "nativeMessaging"
   ],
   "background": {
     "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Session Tabs"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
@@ -20,7 +27,8 @@
       ],
       "js": [
         "content.js",
-        "rightClickGestures.js"
+        "rightClickGestures.js",
+        "sessionIndicator.js"
       ],
       "run_at": "document_start",
       "all_frames": true,

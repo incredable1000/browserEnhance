@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+main {
+  padding: 16px 16px 18px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  color: #475569;
+  font-size: 12px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.status.ok {
+  background: rgba(22, 200, 120, 0.18);
+  color: #0b3b27;
+}
+
+.status.error {
+  background: rgba(244, 63, 94, 0.14);
+  color: #7f1d1d;
+}
+
+.new-session {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.new-session input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  background: #fff;
+}
+
+.new-session button,
+.actions button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #16c878;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.actions .ghost {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.session-list h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+#sessions {
+  display: grid;
+  gap: 8px;
+}
+
+.session-card {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.session-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.session-actions button {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #dbe3f3;
+  background: #f1f5f9;
+  font-size: 11px;
+  cursor: pointer;
+}

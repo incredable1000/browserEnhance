@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sessions</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Session Tabs</h1>
+        <p class="subtitle">Keep multiple logins isolated in the same window.</p>
+      </header>
+
+      <section class="status" id="hostStatus">Native host: checking...</section>
+
+      <section class="new-session">
+        <input id="sessionName" type="text" placeholder="New session name" />
+        <button id="createSession">Create</button>
+      </section>
+
+      <section class="actions">
+        <button id="assignCurrent">Assign Current Tab</button>
+        <button id="detachCurrent" class="ghost">Detach Tab</button>
+      </section>
+
+      <section class="session-list">
+        <h2>Sessions</h2>
+        <div id="sessions"></div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

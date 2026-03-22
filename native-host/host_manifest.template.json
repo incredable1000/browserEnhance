@@ -1,0 +1,9 @@
+{
+  "name": "com.incredable.browserenhance.sessions",
+  "description": "BrowserEnhance session isolation host",
+  "path": "C:\\\\REPLACE_WITH_FULL_PATH\\\\native-host\\\\host.cmd",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://EXTENSION_ID/"
+  ]
+}
