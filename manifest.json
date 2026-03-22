@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Link Drag Right Opener",
+  "version": "1.0.0",
+  "description": "Click and hold a link, then move right to open it in a new tab next to the current tab.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js",
+        "rightClickGestures.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
